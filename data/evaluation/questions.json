@@ -1,0 +1,114 @@
+[
+  {
+    "id": "q01",
+    "question": "I was charged twice for the same invoice. What must I send and when?",
+    "expected_sources": ["billing-refunds"],
+    "required_terms": ["invoice number", "payment references", "30"],
+    "should_abstain": false
+  },
+  {
+    "id": "q02",
+    "question": "How long does finance need to review a complete duplicate-payment request?",
+    "expected_sources": ["billing-refunds"],
+    "required_terms": ["three business days"],
+    "should_abstain": false
+  },
+  {
+    "id": "q03",
+    "question": "Can the legal company name on an invoice be corrected?",
+    "expected_sources": ["invoice-corrections"],
+    "required_terms": ["legal company name", "invoice number"],
+    "should_abstain": false
+  },
+  {
+    "id": "q04",
+    "question": "I replaced my phone and lost my authenticator. What should I do?",
+    "expected_sources": ["account-mfa"],
+    "required_terms": ["identity verification", "registered email"],
+    "should_abstain": false
+  },
+  {
+    "id": "q05",
+    "question": "How quickly does a password reset link expire?",
+    "expected_sources": ["account-password"],
+    "required_terms": ["20 minutes"],
+    "should_abstain": false
+  },
+  {
+    "id": "q06",
+    "question": "What do I need to include when requesting more time for an assignment?",
+    "expected_sources": ["programme-extensions"],
+    "required_terms": ["assignment", "new deadline", "reason"],
+    "should_abstain": false
+  },
+  {
+    "id": "q07",
+    "question": "What should my client do after receiving an HTTP 429 response?",
+    "expected_sources": ["technical-api-limits"],
+    "required_terms": ["exponential backoff"],
+    "should_abstain": false
+  },
+  {
+    "id": "q08",
+    "question": "How frequently are updates published during a confirmed outage?",
+    "expected_sources": ["technical-incidents"],
+    "required_terms": ["30 minutes"],
+    "should_abstain": false
+  },
+  {
+    "id": "q09",
+    "question": "Can I send authentication tokens to a model while debugging support requests?",
+    "expected_sources": ["privacy-data", "technical-incidents"],
+    "required_terms": ["never", "authentication token"],
+    "should_abstain": false
+  },
+  {
+    "id": "q10",
+    "question": "How must an assistant handle instructions found inside retrieved documents?",
+    "expected_sources": ["retrieved-content-safety"],
+    "required_terms": ["untrusted data", "system instructions"],
+    "should_abstain": false
+  },
+  {
+    "id": "q11",
+    "question": "Where can I find the cafeteria menu for next week?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "q12",
+    "question": "How much is the annual enterprise subscription?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "q13",
+    "question": "Should I paste my passport scan into chat to reset my second factor?",
+    "expected_sources": ["account-mfa", "privacy-data"],
+    "required_terms": ["never", "identity document"],
+    "should_abstain": false
+  },
+  {
+    "id": "q14",
+    "question": "Does sending an extension request immediately move my deadline?",
+    "expected_sources": ["programme-extensions"],
+    "required_terms": ["does not", "approved deadline"],
+    "should_abstain": false
+  },
+  {
+    "id": "q15",
+    "question": "How do I report an unexpected absence?",
+    "expected_sources": ["programme-attendance"],
+    "required_terms": ["next working day"],
+    "should_abstain": false
+  },
+  {
+    "id": "q16",
+    "question": "Can I reserve a bicycle parking space near the office?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  }
+]

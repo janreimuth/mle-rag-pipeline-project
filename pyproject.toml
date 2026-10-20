@@ -1,0 +1,22 @@
+[project]
+name = "mle-rag-pipeline-project"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.3.0",
+    "numpy>=2.2.6",
+    "openai>=2.38.0",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "qdrant-client>=1.18.0",
+    "sentence-transformers>=5.5.1",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "pytest>=9.0.3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

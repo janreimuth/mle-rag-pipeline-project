@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cal01",
+    "question": "Which payment details must I include when reporting a duplicate charge?",
+    "expected_sources": ["billing-refunds"],
+    "required_terms": ["invoice number", "payment references"],
+    "should_abstain": false
+  },
+  {
+    "id": "cal02",
+    "question": "Where should I open a ticket to replace a lost authenticator?",
+    "expected_sources": ["account-mfa"],
+    "required_terms": ["registered email", "identity verification"],
+    "should_abstain": false
+  },
+  {
+    "id": "cal03",
+    "question": "How should my integration handle rate limiting from the Northstar API?",
+    "expected_sources": ["technical-api-limits"],
+    "required_terms": ["exponential backoff"],
+    "should_abstain": false
+  },
+  {
+    "id": "cal04",
+    "question": "Can I extend my subscription for free because the platform was unavailable?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal05",
+    "question": "What is the cancellation refund policy for an annual subscription?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal06",
+    "question": "Is there a discounted subscription rate for students?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  }
+]
