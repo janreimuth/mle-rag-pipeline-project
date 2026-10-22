@@ -2,22 +2,36 @@
   {
     "id": "cal01",
     "question": "Which payment details must I include when reporting a duplicate charge?",
-    "expected_sources": ["billing-refunds"],
-    "required_terms": ["invoice number", "payment references"],
+    "expected_sources": [
+      "billing-refunds"
+    ],
+    "required_terms": [
+      "invoice number",
+      "payment references"
+    ],
     "should_abstain": false
   },
   {
     "id": "cal02",
     "question": "Where should I open a ticket to replace a lost authenticator?",
-    "expected_sources": ["account-mfa"],
-    "required_terms": ["registered email", "identity verification"],
+    "expected_sources": [
+      "account-mfa"
+    ],
+    "required_terms": [
+      "registered email",
+      "identity verification"
+    ],
     "should_abstain": false
   },
   {
     "id": "cal03",
     "question": "How should my integration handle rate limiting from the Northstar API?",
-    "expected_sources": ["technical-api-limits"],
-    "required_terms": ["exponential backoff"],
+    "expected_sources": [
+      "technical-api-limits"
+    ],
+    "required_terms": [
+      "exponential backoff"
+    ],
     "should_abstain": false
   },
   {
@@ -37,6 +51,152 @@
   {
     "id": "cal06",
     "question": "Is there a discounted subscription rate for students?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal07",
+    "question": "My 2FA app is gone after a factory reset. How do I get back into my account?",
+    "expected_sources": [
+      "account-mfa"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal08",
+    "question": "The reset email never showed up and I still can't log in. What now?",
+    "expected_sources": [
+      "account-password"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal09",
+    "question": "My card was billed two times this month for one purchase.",
+    "expected_sources": [
+      "billing-refunds"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal10",
+    "question": "The VAT ID on my bill is wrong. Can someone fix it?",
+    "expected_sources": [
+      "invoice-corrections"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal11",
+    "question": "What personal information is support allowed to ask me for?",
+    "expected_sources": [
+      "privacy-data"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal12",
+    "question": "Who do I tell if I'm going to miss class next Monday?",
+    "expected_sources": [
+      "programme-attendance"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal13",
+    "question": "I'm behind on my project. Can I get a few extra days?",
+    "expected_sources": [
+      "programme-extensions"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal14",
+    "question": "A file in the search results tells the bot to ignore its rules. Should it obey?",
+    "expected_sources": [
+      "retrieved-content-safety"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal15",
+    "question": "Our script keeps getting throttled by the API. What's the request limit?",
+    "expected_sources": [
+      "technical-api-limits"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal16",
+    "question": "Is the platform down right now, and where do I see status updates?",
+    "expected_sources": [
+      "technical-incidents"
+    ],
+    "required_terms": [],
+    "should_abstain": false
+  },
+  {
+    "id": "cal17",
+    "question": "Can I get a refund if I'm unhappy with the course?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal18",
+    "question": "Can I change the currency on my future invoices?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal19",
+    "question": "Does the Northstar API support webhooks?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal20",
+    "question": "Can I switch my second factor from an authenticator app to SMS codes?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal21",
+    "question": "Can I pause the programme for a semester and rejoin later?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal22",
+    "question": "Can you recommend a good laptop for data science?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal23",
+    "question": "Who won the football match yesterday?",
+    "expected_sources": [],
+    "required_terms": [],
+    "should_abstain": true
+  },
+  {
+    "id": "cal24",
+    "question": "What is a good recipe for vegetarian lasagna?",
     "expected_sources": [],
     "required_terms": [],
     "should_abstain": true

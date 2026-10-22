@@ -1,0 +1,386 @@
+[
+  {
+    "id": "q01",
+    "retrieved": [
+      "invoice-corrections",
+      "billing-refunds",
+      "programme-extensions"
+    ],
+    "top_score": 0.5585020918442721,
+    "recall": 1.0,
+    "rr": 0.5,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "To request a refund for a duplicate charge, you must send the **invoice number** and the **payment references for both transactions** within **30 calendar days of the second charge**. Finance will review the request and, if approved, process the refund within three business days, with the refund returning to the original payment method (bank processing may take an additional five to ten business days). [billing-refunds#1]",
+    "citations": [
+      "billing-refunds#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.6079875230789185,
+    "faithfulness_proxy": 0.8387096774193549,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "Answer directly cites the source and fully addresses the question."
+    }
+  },
+  {
+    "id": "q02",
+    "retrieved": [
+      "billing-refunds",
+      "invoice-corrections",
+      "programme-extensions"
+    ],
+    "top_score": 0.6549615295385538,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "Finance reviews a complete duplicate\u2011payment request within three business days. [billing-refunds#1]",
+    "citations": [
+      "billing-refunds#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.9175741076469421,
+    "faithfulness_proxy": 1.0,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer directly cites the correct time frame from the source."
+    }
+  },
+  {
+    "id": "q03",
+    "retrieved": [
+      "invoice-corrections",
+      "billing-refunds",
+      "privacy-data"
+    ],
+    "top_score": 0.7321231835432954,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "Yes. Finance can correct the legal company name on an issued invoice, provided the request includes the invoice number and the exact replacement legal details. [invoice-corrections#1]",
+    "citations": [
+      "invoice-corrections#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.8897206783294678,
+    "faithfulness_proxy": 0.8,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer accurately reflects the source, stating that Finance can correct the legal company name on an invoice with the required details."
+    }
+  },
+  {
+    "id": "q04",
+    "retrieved": [
+      "account-mfa",
+      "account-password",
+      "privacy-data"
+    ],
+    "top_score": 0.60204094123251,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "Open a support ticket from the email address you used to register and explain that you replaced your phone and lost the authenticator. Support will verify your identity, then disable the old authenticator and let you enroll a new device the next time you sign in. They will not ask for backup codes, passwords, or identity documents in chat. [account-mfa#1]",
+    "citations": [
+      "account-mfa#1"
+    ],
+    "term_coverage": 0.0,
+    "relevance_proxy": 0.7864031195640564,
+    "faithfulness_proxy": 0.5333333333333333,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "Answer fully matches the source and directly addresses the question."
+    }
+  },
+  {
+    "id": "q05",
+    "retrieved": [
+      "account-password",
+      "account-mfa",
+      "technical-api-limits"
+    ],
+    "top_score": 0.827572088902472,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "A password\u2011reset link expires after 20\u202fminutes. [account-password#1]",
+    "citations": [
+      "account-password#1"
+    ],
+    "term_coverage": 0.0,
+    "relevance_proxy": 0.8754565715789795,
+    "faithfulness_proxy": 1.0,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer correctly states the 20\u2011minute expiration and cites the source, fully addressing the question."
+    }
+  },
+  {
+    "id": "q06",
+    "retrieved": [
+      "programme-extensions",
+      "programme-attendance",
+      "privacy-data"
+    ],
+    "top_score": 0.5042642404887945,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "When you request an extension, you must include the **assignment name**, the **new deadline you\u2019re requesting**, and a **concise reason** for the delay. The request should be submitted **before the original deadline whenever possible**. This information allows programme operations to confirm the new deadline in writing. [programme-extensions#1]",
+    "citations": [
+      "programme-extensions#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.5254506468772888,
+    "faithfulness_proxy": 0.6190476190476191,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "Answer fully matches the source and directly addresses the question."
+    }
+  },
+  {
+    "id": "q07",
+    "retrieved": [
+      "technical-incidents",
+      "technical-api-limits",
+      "retrieved-content-safety"
+    ],
+    "top_score": 0.35309690288453155,
+    "recall": 1.0,
+    "rr": 0.5,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "If a client receives an HTTP 429 response, it should pause and retry the request using exponential backoff. Repeated immediate retries can increase load and potentially prolong any disruption. The client should also avoid posting the API key in tickets, chat messages, or prompts. [technical-api-limits#1]",
+    "citations": [
+      "technical-api-limits#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.7134665250778198,
+    "faithfulness_proxy": 0.6428571428571429,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer is fully supported by the source and directly addresses the question."
+    }
+  },
+  {
+    "id": "q08",
+    "retrieved": [
+      "technical-incidents",
+      "programme-attendance",
+      "technical-api-limits"
+    ],
+    "top_score": 0.6325365035019265,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "Updates are posted to the service status page at least every 30\u202fminutes until the outage is resolved. [technical-incidents#1]",
+    "citations": [
+      "technical-incidents#1"
+    ],
+    "term_coverage": 0.0,
+    "relevance_proxy": 0.7045291662216187,
+    "faithfulness_proxy": 0.8333333333333334,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer accurately reflects the source statement and directly answers the question."
+    }
+  },
+  {
+    "id": "q09",
+    "retrieved": [
+      "privacy-data",
+      "account-mfa",
+      "technical-incidents"
+    ],
+    "top_score": 0.32542696800187465,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "No. According to the policy, authentication tokens (along with passwords, backup codes, passport scans, or medical details) must never be included in a language\u2011model prompt while debugging support requests. [privacy-data#1]",
+    "citations": [
+      "privacy-data#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.6596642732620239,
+    "faithfulness_proxy": 0.6666666666666666,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer correctly states that authentication tokens must not be sent to a model, directly addressing the question and fully supported by the source."
+    }
+  },
+  {
+    "id": "q10",
+    "retrieved": [
+      "retrieved-content-safety",
+      "privacy-data",
+      "invoice-corrections"
+    ],
+    "top_score": 0.5796454969324176,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "An assistant must treat any instruction that appears inside a retrieved document as evidence only, not as new system instructions, and must reject any request to reveal prompts, keys, or private content. If suspicious instructions are found, the assistant should remove the affected chunk from the answer context, record a safety event, and provide an answer only if the remaining approved evidence supports the question. [retrieved-content-safety#1]",
+    "citations": [
+      "retrieved-content-safety#1"
+    ],
+    "term_coverage": 0.5,
+    "relevance_proxy": 0.7178995609283447,
+    "faithfulness_proxy": 0.8,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "Answer fully matches source and addresses question."
+    }
+  },
+  {
+    "id": "q11",
+    "retrieved": [],
+    "top_score": 0.1734159321690213,
+    "recall": null,
+    "rr": null,
+    "abstained": true,
+    "abstained_by": "retrieval",
+    "decision_ok": true,
+    "answer": "The knowledge base does not contain an answer to this question.",
+    "citations": [],
+    "term_coverage": null,
+    "relevance_proxy": null,
+    "faithfulness_proxy": null,
+    "judge": null
+  },
+  {
+    "id": "q12",
+    "retrieved": [],
+    "top_score": 0.21186174689409462,
+    "recall": null,
+    "rr": null,
+    "abstained": true,
+    "abstained_by": "retrieval",
+    "decision_ok": true,
+    "answer": "The knowledge base does not contain an answer to this question.",
+    "citations": [],
+    "term_coverage": null,
+    "relevance_proxy": null,
+    "faithfulness_proxy": null,
+    "judge": null
+  },
+  {
+    "id": "q13",
+    "retrieved": [
+      "account-mfa",
+      "privacy-data",
+      "retrieved-content-safety"
+    ],
+    "top_score": 0.4896843884574433,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "No. Support never asks for a passport scan or any other identity document in chat, and you should not share such sensitive information in a language\u2011model prompt. The policy explicitly states that passport scans must not be included in chat or prompts.",
+    "citations": [],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.5628876090049744,
+    "faithfulness_proxy": 0.0,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "Answer is fully supported by sources and directly addresses the question."
+    }
+  },
+  {
+    "id": "q14",
+    "retrieved": [
+      "programme-extensions",
+      "technical-incidents",
+      "technical-api-limits"
+    ],
+    "top_score": 0.6804050104277002,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "No. Sending an extension request does not itself change the submission deadline; the deadline is only confirmed in writing after approval. [programme-extensions#1]",
+    "citations": [
+      "programme-extensions#1"
+    ],
+    "term_coverage": 0.5,
+    "relevance_proxy": 0.8533152341842651,
+    "faithfulness_proxy": 0.75,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "The answer accurately reflects the source stating that a request does not change the deadline until written confirmation."
+    }
+  },
+  {
+    "id": "q15",
+    "retrieved": [
+      "programme-attendance",
+      "technical-incidents",
+      "privacy-data"
+    ],
+    "top_score": 0.5910467552426966,
+    "recall": 1.0,
+    "rr": 1.0,
+    "abstained": false,
+    "abstained_by": null,
+    "decision_ok": true,
+    "answer": "To report an unexpected absence, submit the reason as soon as practical and no later than the end of the next working day. This should be done through the learning platform\u2019s attendance reporting feature. [programme-attendance#1]",
+    "citations": [
+      "programme-attendance#1"
+    ],
+    "term_coverage": 1.0,
+    "relevance_proxy": 0.7643956542015076,
+    "faithfulness_proxy": 0.8421052631578947,
+    "judge": {
+      "faithfulness": 1.0,
+      "relevance": 1.0,
+      "reason": "Answer directly cites the source and accurately reflects the instructions for reporting an unexpected absence."
+    }
+  },
+  {
+    "id": "q16",
+    "retrieved": [],
+    "top_score": 0.08496451360839703,
+    "recall": null,
+    "rr": null,
+    "abstained": true,
+    "abstained_by": "retrieval",
+    "decision_ok": true,
+    "answer": "The knowledge base does not contain an answer to this question.",
+    "citations": [],
+    "term_coverage": null,
+    "relevance_proxy": null,
+    "faithfulness_proxy": null,
+    "judge": null
+  }
+]
